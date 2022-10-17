@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fcfcfc;
+}
+
+header {
+    height: 90px;
+    border-bottom: 1px solid #ccc;
+}
+
+header img {
+    float: left;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.header-tip {
+    float: right;
+}
+
+.header-tip .header-tip-title {
+    color: #999;
+}
+
+a {
+    color: #0066cc;
+}
+
+.header-tip .header-tip-button {
+    display: inline-block;
+    height: 20px;
+    background-color: #fff;
+    line-height: 20px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    margin-right: 50px;
+    margin-left: 20px;
+    padding: 0 5px;
+}
+
+.header-tip .header-tip-button::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/runbun.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: contain;
+}
+
+.header-tip .header-tip-button::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/turnb.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: contain;
+}
+
+main {
+    height: 550px;
+    position: relative;
+}
+.formbox {
+    width: 332px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%);
+    color: #999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.formbox h2{
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.formbox .formbox-long {
+    width: 330px;
+    height: 50px;
+    border: 1px solid #ccc;
+    line-height: 50px;
+}
+.formbox .formbox-long input{
+    margin-left: 20px;
+}
+.formbox .formbox-shot {
+    width: 330px;
+    height: 50px;
+    line-height: 50px;
+}
+.formbox-shot-box {
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 50px;
+    float: left;
+}
+.formbox .formbox-shot input{
+    margin-left: 20px;
+}
+.formbox .formbox-shot  button {
+    width: 120px;
+    height: 50px;
+    background-color: #ff0000;
+    color: #fff;
+    float: right;
+}
+.formbox-tip {
+    text-indent: 1em;
+}
+.formbox button {
+    width: 330px;
+    height: 50px;
+    background-color: #ff0606;
+    border-radius: 5px;
+    color: #fff;
+}
+footer {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    color: #333;
+}
+
+footer div {
+    margin: 10px;
+}
+
+footer div span {
+    margin: 3px;
+}

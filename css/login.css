@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fcfcfc;
+}
+
+header {
+    height: 90px;
+    border-bottom: 1px solid #ccc;
+}
+
+header img {
+    float: left;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.header-tip {
+    float: right;
+}
+
+.header-tip .header-tip-title {
+    color: #999;
+}
+
+a {
+    color: #0066cc;
+}
+
+.header-tip .header-tip-button {
+    display: inline-block;
+    height: 20px;
+    background-color: #fff;
+    line-height: 20px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    margin-right: 50px;
+    margin-left: 20px;
+    padding: 0 5px;
+}
+
+.header-tip .header-tip-button::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/runbun.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: contain;
+}
+
+.header-tip .header-tip-button::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/turnb.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: contain;
+}
+
+main {
+    height: 550px;
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.loadimg {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.formbox {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    z-index: 2;
+    height: 400px;
+    width: 332px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.formbox-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formbox-title-text {
+    font-weight: bold;
+    font-size: 14px;
+    color: #7d6666;
+}
+
+.formbox-user {
+    width: 330px;
+    height: 50px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 50px;
+}
+
+.formbox-user img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.formbox-user input {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.formbox-pwd {
+    width: 330px;
+    height: 50px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 50px;
+}
+
+.formbox-pwd img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.formbox-pwd input {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.formbox-auto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #999;
+}
+
+.formbox-auto input {
+    vertical-align: middle;
+}
+
+.formbox-auto-forget {
+    color: #999;
+}
+
+.formbox button {
+    width: 332px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #ff3c3c;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+}
+
+.formbox-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formbox-more img {
+    vertical-align: middle;
+}
+
+footer {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    color: #333;
+}
+
+footer div {
+    margin: 10px;
+}
+
+footer div span {
+    margin: 3px;
+}
